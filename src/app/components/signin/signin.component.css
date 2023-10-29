@@ -17,13 +17,21 @@
     background-image: url('../../../assets/imagenes/imagen-derecha.jpg');
     background-size: cover;
 }
-.login-container {
+.bienvenidos{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 50%; 
     text-align: center;
+}
+
+.login-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%; 
 }
 
 
@@ -46,23 +54,40 @@
 }
 
 .login-container button {
-    background-color: #0074d9;
-    color: white;
+    background-color: #fff;
+    color: #0056b3;
     padding: 10px;
     border: none;
-    border-radius: 5px;
+    border-radius: 30px;
     margin-top: 10px;
     cursor: pointer;
 }
 
 .login-container button:hover {
     background-color: #0056b3;
+    color: #fff;
 }
 
 .registrate{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 150%;
     color: #fff;
+    text-align: center;
 }
 a{
     color: #ffffff81;
     text-decoration: none;
+}
+
+.login-container input {
+    margin: 5px 0;
+    padding: 10px;
+    border: none; 
+    color: #fff;
+    border-bottom: 1px solid #ccc; 
+    background: transparent; 
+    border-radius: 0; 
+    outline: none; 
 }
