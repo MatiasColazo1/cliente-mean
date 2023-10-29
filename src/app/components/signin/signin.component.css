@@ -1,0 +1,68 @@
+.imagen-izquierda{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-image: url('../../../assets/imagenes/download.jpg');
+    background-size: cover;
+}
+
+.imagen-derecha{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-image: url('../../../assets/imagenes/imagen-derecha.jpg');
+    background-size: cover;
+}
+.login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%; 
+    text-align: center;
+}
+
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.login-container label {
+    font-weight: bold;
+    color: #fff;
+}
+
+.login-container input {
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-container button {
+    background-color: #0074d9;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #0056b3;
+}
+
+.registrate{
+    color: #fff;
+}
+a{
+    color: #ffffff81;
+    text-decoration: none;
+}
