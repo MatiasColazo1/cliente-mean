@@ -91,3 +91,17 @@ a{
     border-radius: 0; 
     outline: none; 
 }
+
+@media (max-width: 768px) {
+    .imagen-derecha {
+      display: none;
+    }
+    .imagen-izquierda {
+        width: 100%;
+      }
+      .registrate {
+        text-align: center;
+        width: 100%;
+        position: absolute;
+      }
+  }
