@@ -15,6 +15,7 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { HeaderComponent } from './components/header/header.component';
 import { BalanceComponent } from './components/balance/balance.component';
 import { NgChartsModule } from 'ng2-charts';
+import { InicioComponent } from './components/inicio/inicio.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { NgChartsModule } from 'ng2-charts';
     PrivateTasksComponent,
     SidebarComponent,
     HeaderComponent,
-    BalanceComponent
+    BalanceComponent,
+    InicioComponent
   ],
   imports: [
     BrowserModule,
