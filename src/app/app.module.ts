@@ -12,6 +12,9 @@ import { PrivateTasksComponent } from './components/private-tasks/private-tasks.
 import { AuthGuard } from './auth.guard';
 import { TokenInterceptorService } from './services/token-interceptor.service';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { HeaderComponent } from './components/header/header.component';
+import { BalanceComponent } from './components/balance/balance.component';
+import { NgChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -20,13 +23,16 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     SigninComponent,
     TasksComponent,
     PrivateTasksComponent,
-    SidebarComponent
+    SidebarComponent,
+    HeaderComponent,
+    BalanceComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgChartsModule
   ],
   providers: [
     AuthGuard,
