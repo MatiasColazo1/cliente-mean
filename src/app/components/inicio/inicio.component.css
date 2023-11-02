@@ -1,3 +1,44 @@
 .carta1{
-    background: linear-gradient(135deg, #220b89, #547898);
+    background: linear-gradient(to bottom right,#353A61,#5D95BE);
+    color: #fff;
 }
+
+.card {
+    height: 15rem;
+   width: 21rem;
+   margin: 5px;
+}
+.saldo p {
+    margin: 0; /* Elimina el margen vertical del elemento <p> */
+}
+
+.saldo h5 {
+    margin: 0; /* Elimina el margen vertical del elemento <h5> */
+}
+.titular p {
+    margin: 0; /* Elimina el margen vertical del elemento <p> */
+}
+
+.titular p {
+    margin: 0; /* Elimina el margen vertical del elemento <h5> */
+}
+
+.titular-valida {
+    display: flex;
+  }
+  
+  .titular,
+  .valida {
+    display: inline-block;
+    margin-right: 20px; /* Elimina el margen */
+  }
+  
+  .titular p,
+  .valida p {
+    margin: 0; /* Elimina el margen entre los párrafos dentro de .titular y .valida */
+  }
+
+  .tarjeta{
+    display: flex;
+    justify-content: flex-end!important;
+  }
