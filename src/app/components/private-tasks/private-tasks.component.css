@@ -2,3 +2,6 @@
     display: flex;
   }
   
+  .sidebar-container > div {
+    flex: 1; /* Esto distribuirá el espacio de manera uniforme entre los hijos */
+}
