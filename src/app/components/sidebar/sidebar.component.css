@@ -5,7 +5,10 @@
     color: #000000;
     padding: 10px;
     height: 100vh; /* Establece la altura al 100% de la altura de la ventana */
-  overflow-y: auto; /* Añade una barra de desplazamiento vertical si el contenido es demasiado largo */
+    overflow-y: auto; /* Añade una barra de desplazamiento vertical si el contenido es demasiado largo */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
   }
 
   .sidebar img {
