@@ -1,7 +1,11 @@
+.background {
+  background: rgb(225, 222, 222);
+}
+
 .sidebar-container {
     display: flex;
   }
   
   .sidebar-container > div {
-    flex: 1; /* Esto distribuirá el espacio de manera uniforme entre los hijos */
+    flex: 1; 
 }
