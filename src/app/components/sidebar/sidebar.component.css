@@ -1,7 +1,7 @@
 
 .sidebar {
-    width: 250px;
-    background-color: #dac8c8;
+    width: 220px;
+    background-color: #fff;
     color: #000000;
     padding: 10px;
     height: 100vh; /* Establece la altura al 100% de la altura de la ventana */
@@ -25,7 +25,7 @@
   }
   
   .sidebar li {
-      margin: 20px;
+      margin: 15px;
       display: flex;
       align-items: center;
       transition: background-color 0.3s, color 0.3s; /* Agregar transiciones suaves */
@@ -40,17 +40,13 @@
     text-decoration: none;
     color: #010101;
   }
-  .sidebar i {
-    font-size: 24px;
-    margin-right: 10px;
-  }
   
 
 /* Estilo del ícono predeterminado (sin hover) */
 .sidebar i {
   margin-right: 10px;
   border-radius: 50%;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 
