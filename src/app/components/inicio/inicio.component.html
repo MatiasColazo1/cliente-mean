@@ -6,7 +6,7 @@
         <div class="card-body">
             <div class="saldo">
                 <p>Mi saldo</p>
-                <h5>{{ tarjetaData.saldo }}</h5>
+                <h5>{{ tarjetaData.saldo | number:'1.0-0' }}</h5>
             </div>
             <div class="tarjeta">
                 <p>.... .... .... {{ tarjetaData.cardNumber }}</p>
