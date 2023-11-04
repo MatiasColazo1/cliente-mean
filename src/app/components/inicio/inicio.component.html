@@ -1,13 +1,15 @@
-<h5>Inicio</h5>
+<div class="inicio">
+    <h5>Inicio</h5>
+</div>
 <div class="d-flex">
     <div class="card carta1 rounded-5">
         <div class="card-body">
             <div class="saldo">
                 <p>Mi saldo</p>
-                <h5>$12,345,789</h5>
+                <h5>{{ tarjetaData.saldo }}</h5>
             </div>
             <div class="tarjeta">
-                <p>.... .... .... 3245</p>
+                <p>.... .... .... {{ tarjetaData.cardNumber }}</p>
             </div>
             <div class="titular-valida">
                 <div class="titular">
@@ -16,7 +18,7 @@
                 </div>
                 <div class="valida">
                   <p>Valida hasta</p>
-                  <p>03/25</p>
+                  <p>{{ tarjetaData.fecha }}</p>
                 </div>
               </div>
         </div>
