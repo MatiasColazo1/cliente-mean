@@ -1,15 +1,29 @@
-<div class="navbar">
-  <div class="search-bar">
-    <input type="text" placeholder=" Busca aquí">
-  </div>
-  <div class="circle-icon">
-    <i class='bx bx-bell'></i>
-  </div>
-  <div class="circle-icon">
-    <i class='bx bx-cog'></i>
-  </div>
-  <div class="profile circle-icon">
-    <img src="ruta-a-la-imagen.jpg" alt="Foto de perfil">
-    <span></span>
-  </div>
+<div class="navbar navbar-expand-lg bg-body-tertriary">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse mt-3 justify-content-between">
+      <div>
+       <form role="search" class="d-fex">
+        <input type="search" aria-label="search" placeholder="🔍    Busca aquí" class="form-control me-2 rounded-5 opacidad widthS">
+       </form>
+      </div>
+      <div class="me-5">
+        <ul class="navbar-nav me-auto mb-lg-0">
+          <li class="nav-item opacidad">
+            <a routerLink="/private" class="nav-link"><i class='bx bx-bell rounded-5'></i></a>
+          </li>
+          <li class="nav-item opacidad">
+            <a routerLink="/private" class="nav-link"><i class='bx bx-cog rounded-5'></i></a>
+          </li>
+          <li class="nav-item">
+            <a routerLink="/private" class="nav-link"><img src="../../../assets/imagenes/perfil.jpg" alt="perfil" class=" circle-icon"></a>
+          </li>
+          <li>
+            <a class="nav-link mt-3 nombre">{{ tarjetaData.nombre }}</a>
+          </li>
+        </ul>
+      </div>
+  
 </div>
+</div>
+</div>
+

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TarjetaService } from 'src/app/services/tarjeta.service';
 
 @Component({
   selector: 'app-header',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
+  tarjetaData: any;
+
+  constructor(private tarjetaService: TarjetaService) {}
+  ngOnInit(): void {
+    this.tarjetaService.obtenerTarjeta().subscribe((data: any) => {
+      this.tarjetaData = data;
+    });
+  }
 }

@@ -48,3 +48,22 @@
   .inicio {
     margin-left: 25px;
   }
+
+.ingresosP  {
+  position: relative  !important;
+  top: 0.7rem !important;
+  left: 0.9rem !important;
+  font-size: small;
+}
+
+.card-text {
+  font-size: small;
+}
+
+.ing{
+  color: green;
+}
+
+.egr{
+  color: red;
+}

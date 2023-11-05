@@ -35,3 +35,21 @@
     font-size: 15px; /* Ajusta el tamaño del ícono según tus preferencias */
     color:  rgb(105, 100, 100);;
   }
+
+  .opacidad{
+    opacity: .5;
+  }
+
+  .widthS{
+    width: 40vw;
+  }
+
+  i{
+    border: 1px solid #000;
+    padding: 1.5rem;
+  }
+
+.nombre {
+  font-weight: 700;
+  color: #000;
+}

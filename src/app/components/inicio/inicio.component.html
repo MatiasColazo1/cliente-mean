@@ -29,19 +29,19 @@
             <div class="d-flex justify-content-between">
                 <div class="d-flex direction">
                     <div class="pt-4 ps-3">
-                        <i class='bx bx-left-down-arrow-circle'></i>
+                        <i class='bx bx-left-down-arrow-circle p-3 rounded-5'></i>
                     </div>
                     <div class="pt-4 ps-3">
-                        <p>Ingresos</p>
-                        <h5>${{ tarjetaData.ingresos }}</h5>
+                        <p class="mb-0 card-text">Ingresos</p>
+                        <h5>${{ tarjetaData.ingresos | number:'1.0-0' }}</h5>
                     </div>
                 </div>
                 <div class="pt-2 ps-3">
-                    <div class="ms-4">
-                        <i class='bx bx-chevron-up'></i>
-                        <p>+{{ tarjetaData.ingresosPorcentaje }}%</p>
+                    <div class="ms-4 ing">
+                        <i class='bx bxs-up-arrow ingresosP'></i>
+                        <p class="mb-0">+{{ tarjetaData.ingresosPorcentaje }}%</p>
                     </div>
-                    <p>Mes pasado</p>
+                    <p class="card-text">Mes pasado</p>
                 </div>
             </div>
         </div>
@@ -52,19 +52,19 @@
             <div class="d-flex justify-content-between">
                 <div class="d-flex direction">
                     <div class="pt-4 ps-3">
-                        <i class='bx bx-right-top-arrow-circle'></i>
+                        <i class='bx bx-right-top-arrow-circle p-3 rounded-5'></i>
                     </div>
                     <div class="pt-4 ps-3">
-                        <p>Egresos</p>
-                        <h5>${{ tarjetaData.egresos }}</h5>
+                        <p class="mb-0 card-text">Egresos</p>
+                        <h5>${{ tarjetaData.egresos | number:'1.0-0'}}</h5>
                     </div>
                 </div>
                 <div class="pt-2 ps-3">
-                    <div class="ms-4">
-                        <i class='bx bx-chevron-up'></i>
-                        <p>+{{ tarjetaData.egresosPorcentaje }}%</p>
+                    <div class="ms-4 egr">
+                        <i class='bx bxs-down-arrow ingresosP'></i>
+                        <p class="mb-0">-{{ tarjetaData.egresosPorcentaje }}%</p>
                     </div>
-                    <p>Mes pasado</p>
+                    <p class="card-text">Mes pasado</p>
                 </div>
             </div>
         </div>
