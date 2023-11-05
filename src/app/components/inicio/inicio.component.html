@@ -6,7 +6,7 @@
         <div class="card-body">
             <div class="saldo">
                 <p>Mi saldo</p>
-                <h5>{{ tarjetaData.saldo | number:'1.0-0' }}</h5>
+                <h5>${{ tarjetaData.saldo | number:'1.0-0' }}</h5>
             </div>
             <div class="tarjeta">
                 <p>.... .... .... {{ tarjetaData.cardNumber }}</p>
@@ -14,7 +14,7 @@
             <div class="titular-valida">
                 <div class="titular">
                   <p>Titular Tarjeta</p>
-                  <p>Nombre</p>
+                  <p>{{ tarjetaData.nombre }}</p>
                 </div>
                 <div class="valida">
                   <p>Valida hasta</p>
@@ -26,13 +26,46 @@
 
     <div class="card carta2 rounded-5">
         <div class="card-body">
-            
+            <div class="d-flex justify-content-between">
+                <div class="d-flex direction">
+                    <div class="pt-4 ps-3">
+                        <i class='bx bx-left-down-arrow-circle'></i>
+                    </div>
+                    <div class="pt-4 ps-3">
+                        <p>Ingresos</p>
+                        <h5>${{ tarjetaData.ingresos }}</h5>
+                    </div>
+                </div>
+                <div class="pt-2 ps-3">
+                    <div class="ms-4">
+                        <i class='bx bx-chevron-up'></i>
+                        <p>+{{ tarjetaData.ingresosPorcentaje }}%</p>
+                    </div>
+                    <p>Mes pasado</p>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="card carta3 rounded-5">
+    <div class="card carta2 rounded-5">
         <div class="card-body">
-
+            <div class="d-flex justify-content-between">
+                <div class="d-flex direction">
+                    <div class="pt-4 ps-3">
+                        <i class='bx bx-right-top-arrow-circle'></i>
+                    </div>
+                    <div class="pt-4 ps-3">
+                        <p>Egresos</p>
+                        <h5>${{ tarjetaData.egresos }}</h5>
+                    </div>
+                </div>
+                <div class="pt-2 ps-3">
+                    <div class="ms-4">
+                        <i class='bx bx-chevron-up'></i>
+                        <p>+{{ tarjetaData.egresosPorcentaje }}%</p>
+                    </div>
+                    <p>Mes pasado</p>
+                </div>
+            </div>
         </div>
     </div>
-</div>
