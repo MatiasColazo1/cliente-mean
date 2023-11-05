@@ -8,6 +8,11 @@
    width: 21rem;
    margin: 5px;
 }
+
+.card:hover{
+  transform: scale(1.05);
+}
+
 .saldo p {
     margin: 0; /* Elimina el margen vertical del elemento <p> */
 }
@@ -46,7 +51,7 @@
   }
 
   .inicio {
-    margin-left: 25px;
+    font-size: 1.5rem;
   }
 
 .ingresosP  {

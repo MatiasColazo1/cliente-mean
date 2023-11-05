@@ -49,7 +49,15 @@
     padding: 1.5rem;
   }
 
+i:hover{
+  background-color: rgb(62, 103, 160);
+}
+
 .nombre {
   font-weight: 700;
   color: #000;
+}
+
+.nombre:hover {
+  transform: scale(1.1);
 }
