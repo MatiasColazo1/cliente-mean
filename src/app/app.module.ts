@@ -16,6 +16,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { BalanceComponent } from './components/balance/balance.component';
 import { NgChartsModule } from 'ng2-charts';
 import { InicioComponent } from './components/inicio/inicio.component';
+import { TransaccionComponent } from './components/transaccion/transaccion.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { InicioComponent } from './components/inicio/inicio.component';
     SidebarComponent,
     HeaderComponent,
     BalanceComponent,
-    InicioComponent
+    InicioComponent,
+    TransaccionComponent
   ],
   imports: [
     BrowserModule,
