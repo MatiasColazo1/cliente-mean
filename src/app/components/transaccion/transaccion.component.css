@@ -2,7 +2,24 @@
     width: 12%;
 }
 
+.td-f{
+    width: 8%;
+}
+
 .transferencia {
     font-size: .8rem;
     font-weight: 400;
+}
+
+.tabla{
+    font-size: .8rem;
+}
+
+.tabla a {
+    text-decoration: none;
+    color: #968d8d;
+}
+
+.bx-right-arrow-circle{
+    font-size: 23px;
 }

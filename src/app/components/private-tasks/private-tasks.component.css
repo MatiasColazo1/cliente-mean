@@ -9,3 +9,14 @@
   .sidebar-container > div {
     flex: 1; 
 }
+
+.content {
+  display: flex; 
+}
+
+app-balance,
+app-transaccion {
+  flex: 1;
+  margin: 10px; 
+}
+

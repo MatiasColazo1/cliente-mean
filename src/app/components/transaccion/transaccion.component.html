@@ -1,37 +1,28 @@
-<div>
+<div class="card rounded-5">
     <div class="mt-3 ms-3">
         <h5><b>Ultimas Transacciones</b></h5>
     </div>
     <div class="mt-4" *ngFor="let transaccion of transacciones">
         <table class="tabla">
             <tr>
+                <td class="td-f">
+                    <i class='bx bx-right-arrow-circle ms-3 p-3'></i>
+                </td>
                 <td class="td-w">
-                    <p class="mb-1 mt-1">{{ transaccion.nombre }}</p>
+                    <p class="mb-1 mt-1"><b>{{ transaccion.nombre }}</b></p>
                     <p class="transferencia">Transferencia</p>
                 </td>
-                <td class="td-w">${{ transaccion.monto }}</td>
+                <td class="td-w"><b>${{ transaccion.monto }}</b></td>
                 <td class="td-w">
-                    <p class="mb-1 mt-1">{{ transaccion.fecha }}</p>
+                    <p class="mb-1 mt-1"><b>{{ transaccion.fecha }}</b></p>
                     <p class="transferencia">{{ transaccion.horario }}</p>
                 </td>
-                <td class="td-w">{{ transaccion.estado }}</td>
-                <td></td>
+                <td class="td-w"><b>{{ transaccion.estado }}</b></td>
+                <td class="td-f">
+                    <a routerLink="/private">・・・</a>
+                </td>
             </tr>
         </table>
     </div>
 </div>
 
-
-<div *ngFor="let transaccion of transacciones">
-    <div class="card">
-      <div class="card-body">
-        <p>Nombre: {{ transaccion.nombre }}</p>
-        <p>Monto: {{ transaccion.monto }}</p>
-        <p>Fecha: {{ transaccion.fecha }}</p>
-        <p>Horario: {{ transaccion.horario }}</p>
-        <p>Estado: {{ transaccion.estado }}</p>
-      </div>
-    </div>
-  </div>
-
-  
