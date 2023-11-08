@@ -9,16 +9,16 @@
                 <h5>${{ tarjetaData.saldo | number:'1.0-0' }}</h5>
             </div>
             <div class="tarjeta">
-                <p>.... .... .... {{ tarjetaData.cardNumber }}</p>
+                <p>⦁⦁⦁⦁ ⦁⦁⦁⦁ ⦁⦁⦁⦁ <b>{{ tarjetaData.cardNumber }}</b></p>
             </div>
             <div class="titular-valida">
                 <div class="titular">
                   <p>Titular Tarjeta</p>
-                  <p>{{ tarjetaData.nombre }}</p>
+                  <p><b>{{ tarjetaData.nombre }}</b></p>
                 </div>
                 <div class="valida">
                   <p>Valida hasta</p>
-                  <p>{{ tarjetaData.fecha }}</p>
+                  <p><b>{{ tarjetaData.fecha }}</b></p>
                 </div>
               </div>
         </div>
