@@ -1,0 +1,39 @@
+<div class="menu">
+    <table class="my-4">
+        <div>
+            <tr class="titulos d-flex mb-3">
+                <td></td>
+                <td>Monto total</td>
+                <td class="ps-4">Coutas</td>
+                <td>Fecha de emisión</td>
+                <td class="ps-3">Mensual</td>
+                <td>Tasa interés</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <div class="mt-3" *ngFor="let menu of menu">
+                <tr class="tabla d-flex justify-content-between select-row">
+                    <td class="mt-5 check">
+                        <i class='bx bxs-check-square'></i>
+                    </td>
+                    <td class="mt-4">
+                        <p class="mb-1"><b>${{ menu.monto | number:'1.0-0' }}</b></p>
+                        <p class="submonto">Sin interés</p>
+                    </td>
+                    <td class="mt-5">
+                        <b>{{ menu.coutas }}</b>
+                    </td>
+                    <td class="mt-5 fecha">{{ menu.fecha }}</td>
+                    <td class="mt-5"><b>${{ menu.mensual | number:'1.0-0' }}</b></td>
+                    <td class="mt-5 fecha">{{ menu.interes }}% interés</td>
+                    <td class="mt-5 boton rounded-5 boton_opacidad">
+                        <button>{{ menu.estado }}</button>
+                    </td>
+                    <td class="mt-5 ms-5 ps-2">
+                        <a routerLink="/private" class="puntos">・・・</a>
+                    </td>
+                </tr>
+            </div>
+        </div>
+    </table>
+</div>

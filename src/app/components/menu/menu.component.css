@@ -1,0 +1,56 @@
+div {
+    width: 78.5vw;
+}
+
+table {
+    font-size: .9rem;
+}
+
+.titulos {
+    font-weight: 700;
+}
+
+.tabla {
+    background-color: #fff;
+    height: 7rem;
+    margin: auto;
+}
+
+.check {
+    color: #353a61;
+}
+
+.submonto {
+    font-size: .8rem;
+}
+
+.fecha {
+    color: #9195b1;
+}
+
+@media (min-width: 1200px) {
+    .boton{
+        width: 6rem;
+        height: 2rem;
+        margin-top: -8px;
+        
+    }
+
+}
+
+.boton-opacidad{
+    opacity: .6;
+}
+
+.puntos {
+    text-decoration: none;
+    color: #9195b1;
+}
+
+td{
+    width: 12%;
+}
+
+.mt-4 {
+    margin-top: 2.5rem !important;
+}

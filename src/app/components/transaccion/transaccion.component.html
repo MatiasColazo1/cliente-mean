@@ -12,12 +12,12 @@
                     <p class="mb-1 mt-1"><b>{{ transaccion.nombre }}</b></p>
                     <p class="transferencia">Transferencia</p>
                 </td>
-                <td class="td-w"><b>${{ transaccion.monto }}</b></td>
+                <td class="td-w"><b>${{ transaccion.monto | number:'1.0-0' }}</b></td>
                 <td class="td-w">
                     <p class="mb-1 mt-1"><b>{{ transaccion.fecha }}</b></p>
                     <p class="transferencia">{{ transaccion.horario }}</p>
                 </td>
-                <td class="td-w"><b>{{ transaccion.estado }}</b></td>
+                <td [ngStyle]="getEstadoStyle(transaccion.estado)" class="td-w"><b>{{ transaccion.estado }}</b></td>
                 <td class="td-f">
                     <a routerLink="/private">・・・</a>
                 </td>

@@ -17,6 +17,7 @@ import { BalanceComponent } from './components/balance/balance.component';
 import { NgChartsModule } from 'ng2-charts';
 import { InicioComponent } from './components/inicio/inicio.component';
 import { TransaccionComponent } from './components/transaccion/transaccion.component';
+import { MenuComponent } from './components/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { TransaccionComponent } from './components/transaccion/transaccion.compo
     HeaderComponent,
     BalanceComponent,
     InicioComponent,
-    TransaccionComponent
+    TransaccionComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,

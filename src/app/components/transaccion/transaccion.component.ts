@@ -13,9 +13,19 @@ export class TransaccionComponent implements OnInit{
   constructor(private transaccionesService: TransaccionesService) {}
 
   ngOnInit(): void {
-    // En el método ngOnInit, puedes obtener las transacciones desde tu servicio
     this.transaccionesService.getTransacciones().subscribe((data: any) => {
-      this.transacciones = data; // Asigna los datos al arreglo de transacciones
+      this.transacciones = data; 
     });
+  }
+  getEstadoStyle(estado: string): any {
+    if (estado === 'Completado') {
+      return { color: 'green' };
+    } else if (estado === 'Pendiente') {
+      return { color: 'gray' };
+    } else if (estado === 'Cancelado') {
+      return { color: 'red' };
+    } else {
+      return {}; 
+    }
   }
 }
