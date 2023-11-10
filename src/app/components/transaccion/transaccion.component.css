@@ -23,3 +23,41 @@
 .bx-right-arrow-circle{
     font-size: 23px;
 }
+.tabla tr {
+    margin:  0;
+}
+
+@media (min-width: 1200px) {
+    .footer {
+        margin-top: 0 !important;
+    }
+}
+
+.footer-p{
+    font-size: .7rem;
+}
+
+.footer-numero{
+    font-size: .8rem;
+    margin: 1rem 0.6rem;
+    padding: 0.5rem 0.8rem;
+    border-radius: 1rem;
+    border: 1px solid #000;
+    color: #000;
+}
+
+.footer a{
+    text-decoration: none;
+}
+
+.footer i {
+    text-decoration: none;
+    color: #968d8d;
+}
+
+.footer-numero:hover{
+    background-color: #353a61;
+    color: #fff;
+}
+
+

@@ -1,5 +1,5 @@
-<div class="card rounded-5">
-    <div class="card-body">
+<!--<div class="card rounded-5">
+  <div class="card-body">
       <h5 class="card-title">Balance</h5>
       
         <canvas
@@ -15,5 +15,46 @@
 </canvas>
 
     </div>
-</div>
+</div>-->
 
+<div class="card rounded-5">
+
+<div class="mt-3 ms-3 d-flex justify-content-between">
+  <div>
+  <h5 class="card-title"><b>Balance</b></h5>
+  </div>
+  <div class="d-flex justify-content-end">
+    <div class="me-2">
+      <i class='bx bx-radio-circle-marked label-i'></i>
+    </div>
+    <div class="label me-5">Esta semana</div>
+  <div class="label-2 me-2">
+    <i class='bx bx-radio-circle-marked label-i'></i>
+  </div>
+  <div class="label me-5">Semana pasada</div>
+  <div class="boton me-5 rounded-5">
+    <a routerLink="/private" previewListener="true">
+      <div class="d-flex boton-box">
+      <div>Semana</div>
+      <div class="ms-3 boton-icon"><i class='bx bxs-down-arrow'></i></div>
+      </div>
+    </a>
+  </div>
+</div>
+</div>
+  <div class="chart-layout pb-3 ms-2 me-2 ">
+      
+        <canvas
+  baseChart
+  class="chart"
+  [data]="barChartData"
+  [options]="barChartOptions"
+  [plugins]="barChartPlugins"
+  [type]="barChartType"
+  (chartHover)="chartHovered($event)"
+  (chartClick)="chartClicked($event)"
+>
+</canvas>
+
+    </div>
+  </div>

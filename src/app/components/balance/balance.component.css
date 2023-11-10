@@ -1,0 +1,63 @@
+/*.card {
+    flex: 1; 
+  }
+  
+
+  
+  .chart {
+    flex: 1;
+    display: flex;
+    align-items: flex-end; /
+  }
+  
+  
+  .mt-3.ms-3 {
+    margin: 0.75rem; 
+  */
+  
+
+
+
+
+  .label-i{
+    margin-left: 2rem;
+  }
+
+  .label{
+    font-size: .7rem;
+    position: relative;
+    top: 0.2rem;
+  }
+
+  .boton {
+    top: 0rem;
+    height: 2rem;
+    width: 8rem;
+    font-weight: 700;
+    background-color: #f5f5f5;
+    position: relative;
+  }
+
+  .boton-box {
+    top: 0.4rem;
+    left: 0.9rem;
+    font-size: .8rem;
+    position: relative;
+  }
+
+  .boton-icon{
+    position: relative;
+  }
+
+  .boton a{
+    text-decoration: none;
+    color: #343a61;
+  }
+
+  .chart-layout{
+    margin-top: 2rem;
+  }
+  .card {
+    flex: 1; 
+  }
+
